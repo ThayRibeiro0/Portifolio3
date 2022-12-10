@@ -1,0 +1,343 @@
+/* /Exoeriences/ */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html, body{
+  height: 100%;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: linear-gradient(black, pink );
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial;
+}
+
+.container {
+  display: flex;
+/*   border:1px solid red; */
+  height: 100%;
+  align-items: center;
+}
+
+svg {
+    display: block;
+    font: 7.5em 'Montserrat';
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+  stroke: #f2eaf0;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+  stroke: #f72727;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+  stroke: #f46569;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+  stroke: #BD0034;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+  stroke: #FDB731;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
+}
+
+.move-container{
+    width: 100%;
+    max-width: 1145px;
+    height: 550px;
+    margin-bottom: 20px;
+    align-items: center;
+    display: flex;
+    margin-top: -40px;
+    padding: 0px 0;
+    background-image: url(/images/experiencemd.png);
+    border-radius: 20px;
+  }
+  
+  .pic-content,
+  .text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+  
+  }
+  
+  .move-content{
+    padding: 45px 20px;
+    overflow: hidden;
+    border-radius: 25px;
+    margin: 0;
+    width: 90%;
+  }
+  
+  .pic-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 30px 0;
+  }
+  
+  .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url(/images/code.png);
+    background-size: cover;
+    border-radius: 25px 25px 0 25px;
+  }
+  
+  .overlay1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url(/images/aupair.png);
+    background-size: cover;
+    border-radius: 25px 25px 0 25px;
+  }
+  
+  
+  .overlay2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url(/images/bank.jpg);
+    background-size: cover;
+    border-radius: 25px 25px 0 25px;
+  }
+  
+  .overlay3{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url(/images/cleaner.png);
+    background-size: cover;
+    border-radius: 25px 25px 0 25px;
+  }
+  
+  .overlay4{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url(/images/law.jpg);
+    background-size: cover;
+    border-radius: 25px 25px 0 25px;
+  }
+  
+  .overlay5{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url(/images/Accounting.png);
+    background-size: cover;
+    border-radius: 25px 25px 0 25px;
+  }
+  
+  .overlay6{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url(/images/logistic.png);
+    background-size: cover;
+    border-radius: 25px 25px 0 25px;
+  }
+  
+  .overlay7{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url(/images/adm.png);
+    background-size: cover;
+    border-radius: 25px 25px 0 25px;
+  }
+  
+  .overlay8{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url(/images/informaljob.jpg);
+    background-size: cover;
+    border-radius: 25px 25px 0 25px;
+  }
+  
+  .overlay::before,
+  .overlay::after{
+    content: '';
+    height: 40px;
+    width: 10px;
+    right: 0;
+    bottom: -40px;
+    background-color: rgb(44, 47, 46);
+    position: absolute;
+  }
+  
+  .overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #fff;
+  }
+  
+  .move-content{
+    margin: 40px 40px;
+  }
+  
+  .box{
+    width: 320px;
+    border-radius: 25px;
+    background-color: #fff;
+  }
+  
+  .box-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+  }
+  
+  .box-image .box-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #f72727;
+  }
+  
+  .name{
+    font-size: 18px;
+    font-weight: 500px;
+    margin-bottom: 5px;
+    color: #333;
+    text-align: center;
+  }
+  
+  
+  .description{
+    font-size: 16px;
+    color: gray;
+    text-align: center;
+  }
+  
+  .button{
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #f72727;
+    border-radius: 6px;
+    margin: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover{
+    background-color: #f46569;
+  }
+  
+  div .swiper-navBtn{
+    color: #f72727;
+    transition: color 0.3s ease;
+  }
+  
+  .swiper-navBtn:hover{
+    color: #fff;
+  }
+  
+  .swiper-navBtn:before,
+  .swiper-navBtn:after{
+    font-size: 40px;
+  }
+  
+  .swiper-button-next{
+    right: 0;
+  }
+  
+  .swiper-button-prev{
+    right: 0;
+  }
+  
+  .swiper-pagination-bullet{
+    background-color: #f46569;
+    opacity: 1;
+  }
+  
+  div .swiper-pagination-bullet-active{
+    background-color: #dc2828;
+  }
+
+  .move-container swiper{
+    margin-top: 0;;
+  }
+  section.experience2{
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    width: 100%;
+    min-height: 101vh;
+    background-color: #f8f1f1;
+  }
+  
+  .experience2::before{
+    content: '';
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (max-width:168px) {
+    .swiper-navBtn{
+      display: none;
+    }
+    .move-content swiper-initialized swiper-horizontal swiper-android{
+      padding: (0px, 20px);
+    }
+    .move-content{
+      margin: 0px 10px;
+    }
+  }
