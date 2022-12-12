@@ -1,6 +1,6 @@
 /* Education */
 html {
-  height: 100%;
+  height: auto;
 }
 
 body {
@@ -12,7 +12,10 @@ body {
 
 .card-object {
   display: grid;
-  width: 450px;
+  justify-content: center;
+  margin-left: 230%;
+  width: 200%;
+  margin-top: -400px;
   grid-template: "header header"
     "aside  main"
     "foot  foot";
@@ -51,7 +54,6 @@ body {
   grid-column: foot;
   text-align: right;
   background-color: white;
-  padding: 5px 20px 20px 0;
   border-radius: 0 0 5px 5px;
 }
 
@@ -64,8 +66,6 @@ body {
 }
 
 .floating {
-  padding-left: 35%;
-  margin-bottom: 10px;
   animation: float 6s infinite ease-in-out;
 }
 
@@ -116,6 +116,89 @@ body {
   }
 }
 
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient( #a22a3e, rgb(208, 200, 202));
+}
+
+.education
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin-right: 230px;
+}
+
+.cardedu
+{
+  position: relative;
+  width: 320px;
+  height: 450px;
+  margin: 30px;
+  background: #a22a3e;
+  border-radius: 20px;
+  border-bottom-left-radius: 160px;
+  border-bottom-right-radius: 160px;
+  box-shadow: 0 15px 0 #fff;
+  inset: 0 -15px 0 rgb(154, 146, 146), 
+  0 45px 0 black;
+}
+
+.cardedu::before{
+  content: '';
+  position: absolute;
+  top: -140px;
+  left: -40%;
+  width: 100%;
+  height: 120%;
+  background: linear-gradient(90deg, transparent, #e28292 );
+  transform: rotate(35deg);
+  pointer-events: none;
+  opacity: 0.2;
+  filter: blur(5px);
+}
+
+.cardedu:nth-child(1)
+{
+  background: linear-gradient(to bottom, rgb(220, 153, 153), rgb(161, 47, 47));
+}
+
+.cardedu:nth-child(2)
+{
+  background: linear-gradient(to bottom, rgb(220, 153, 153), rgb(189, 35, 35));
+}
+
+.cardedu:nth-child(3)
+{
+  background: linear-gradient(to bottom, rgb(220, 153, 153), rgb(161, 47, 47));
+}
+
+.icon{
+  position: relative;
+  width: 140px;
+  height: 120px;
+  background: linear-gradient( #a22a3e, rgb(208, 200, 202));
+}
+
+
+
+
+
+
+
+/* 
 .forgotten {
   opacity: 0.1;
   background-color: black;
@@ -174,12 +257,34 @@ body {
 .cardedu::before{
   content: '';
   position: absolute;
-  top: -350;
-  left: 0;
+  top: -140;
+  left: -40;
   width: 100%;
-  height: 150%;
+  height: 120%;
   background: linear-gradient(90deg, transparent, #fff);
   transform: rotate(35deg);
+  pointer-events: none;
+  filter: blur(5px);
+}
+
+.cardedu:nth-child(1)
+{
+  background: linear-gradient(to bottom, #f9004d, #f09bb6) ;
+}
+.cardedu:nth-child(2)
+{
+  background: linear-gradient(to bottom, #f9004d, #f09bb6) ;
+}
+.cardedu:nth-child(3)
+{
+  background: linear-gradient(to bottom, #f9004d, #f09bb6) ;
+}
+
+.{
+  position: relative;
+  width: 140px;
+  height: 120px;
+  background: black;
 }
 
 .cardedu i {
@@ -195,19 +300,19 @@ body {
 }
 
 h2.cursos{
-  color: #fff;
+  color:#fff;
 }
 
 .certificacao {
-  color: rgb(159, 156, 156);
+  color: #fff;
   font-size: 16px;
   margin-bottom: 15px;
 }
 
 .pra p {
-  color: #fcfc;
-  font-size: 20px;
-  line-height: 22px;
+  color: #26262f;
+  font-size: 18px;
+  line-height: 19px;
   margin-bottom: 26px;
 }
 
@@ -222,10 +327,9 @@ h2.cursos{
   transition: .4s;
 }
 
-
 .cardedu .button1:hover {
   background-color: transparent;
   border: 2px solid #f9004d;
   cursor: default;
   font-size: 36px;
-}
+} */
