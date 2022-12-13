@@ -3,18 +3,13 @@ html {
   height: auto;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
 .card-object {
   display: grid;
+  flex-direction: column;
   justify-content: center;
-  margin-left: 230%;
-  width: 200%;
+  margin-left: 280%;
+  width: 100%;
+  height: auto;
   margin-top: -400px;
   grid-template: "header header"
     "aside  main"
@@ -145,8 +140,9 @@ body{
 {
   position: relative;
   width: 320px;
-  height: 450px;
+  height: 600px;
   margin: 30px;
+  margin-top: 12%;
   background: #a22a3e;
   border-radius: 20px;
   border-bottom-left-radius: 160px;
@@ -154,7 +150,10 @@ body{
   box-shadow: 0 15px 0 #fff;
   inset: 0 -15px 0 #9a9292, 
   0 45px 0 black;
-  overflow:auto
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .cardedu::before{
@@ -173,127 +172,86 @@ body{
 
 .cardedu:nth-child(1)
 {
-  background: linear-gradient(to bottom, rgb(220, 153, 153), rgb(161, 47, 47));
+  background: linear-gradient(to bottom, rgb(220, 153, 153), rgb(161, 47, 47),rgb(220, 153, 153) );
 }
 
 .cardedu:nth-child(2)
 {
-  background: linear-gradient(to bottom, rgb(220, 153, 153), rgb(189, 35, 35));
+  background: linear-gradient(to bottom, rgb(220, 153, 153), rgb(189, 35, 35), rgb(220, 153, 153));
 }
 
 .cardedu:nth-child(3)
 {
-  background: linear-gradient(to bottom, rgb(220, 153, 153), rgb(161, 47, 47));
+  background: linear-gradient(to bottom, rgb(220, 153, 153), rgb(161, 47, 47), rgb(220, 153, 153));
 }
 
 .icon{
   position: relative;
   width: 140px;
   height: 120px;
-  background: linear-gradient( #a22a3e, rgb(208, 200, 202));
-}
-
-
-
-
-
-
-
-/* 
-.forgotten {
-  opacity: 0.1;
-  background-color: black;
-}
-
-.close_btn {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  background: #26262f;
-  color: red;
-  display: inline-block;
-  padding: 1em;
-  font-size: 1.4rem;
-  letter-spacing: 0.15em;
-  font-weight: 700;
-  text-transform: uppercase;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  right: 20px;
-  top: 20px;
-}
-
-.boxedu {
+  background: #a22a3e;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  box-shadow: 0 10px 0 gray;
+  inset: 0 -8px 0 #a22a3e; 
+  z-index: 1000;
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 400px;
 }
 
-.textin {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  align-items: center;
-}
-
-.cardedu {
-  height: 600px;
-  width: 405px;
-  padding: 20px 35px;
-  background: #191919;
-  border-radius: 20px;
-  margin: 15px;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  border-bottom-left-radius: 160px;
-  border-bottom-right-radius: 160px;
-  inset: 0 -15px 0 rgb(247, 196, 196), 
-  0 45px 0 rgb(68, 8, 8);
-  box-shadow: 0 15px 0 #fff;
-}
-
-.cardedu::before{
-  content: '';
+.icon::before
+{
+  content:'';
   position: absolute;
-  top: -140;
-  left: -40;
-  width: 100%;
-  height: 120%;
-  background: linear-gradient(90deg, transparent, #fff);
-  transform: rotate(35deg);
-  pointer-events: none;
-  filter: blur(5px);
+  top: 0;
+  left: -50px;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border-top-right-radius: 50px;
+  box-shadow: 15px -15px 0 15px #a22a3e;
 }
 
-.cardedu:nth-child(1)
-{
-  background: linear-gradient(to bottom, #f9004d, #f09bb6) ;
-}
-.cardedu:nth-child(2)
-{
-  background: linear-gradient(to bottom, #f9004d, #f09bb6) ;
-}
-.cardedu:nth-child(3)
-{
-  background: linear-gradient(to bottom, #f9004d, #f09bb6) ;
-}
-
-.{
+.icon .fa-desktop {
+  color: #fff;
   position: relative;
-  width: 140px;
-  height: 120px;
-  background: black;
+  font-size: 6em;
+  z-index: 10000;
 }
 
-.cardedu i {
-  font-size: 50px;
-  display: block;
+.icon .fa-balance-scale {
+  color: #fff;
+  position: relative;
+  font-size: 6em;
+  z-index: 10000;
+}
+
+.icon .fa-cog {
+  color: #fff;
+  position: relative;
+  font-size: 6em;
+  z-index: 10000;
+}
+
+.content10
+{
+  position: absolute;
+  width: 190%;
+  padding-top: 140px;
   text-align: center;
-  margin: 25px 0px;
-  color: #f9004d;
+}
+
+.icon::after
+{
+  content:'';
+  position: absolute;
+  top: 0;
+  right: -50px;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border-top-left-radius: 50px;
+  box-shadow: -15px -15px 0 15px #a22a3e;
 }
 
 .cursos {
@@ -305,7 +263,7 @@ h2.cursos{
 }
 
 .certificacao {
-  color: #fff;
+  color: rgb(248, 161, 161);
   font-size: 16px;
   margin-bottom: 15px;
 }
@@ -317,7 +275,7 @@ h2.cursos{
   margin-bottom: 26px;
 }
 
-.cardedu .button1 {
+.button1 {
   background-color: #f9004d;
   color: #fff;
   text-decoration: none;
@@ -328,9 +286,17 @@ h2.cursos{
   transition: .4s;
 }
 
-.cardedu .button1:hover {
+.button1:hover {
   background-color: transparent;
   border: 2px solid #f9004d;
   cursor: default;
   font-size: 36px;
+}
+/* 
+@media (max-width: 160px)
+{
+.education
+{
+  margin-right: -230px;
+}
 } */
