@@ -152,8 +152,9 @@ body{
   border-bottom-left-radius: 160px;
   border-bottom-right-radius: 160px;
   box-shadow: 0 15px 0 #fff;
-  inset: 0 -15px 0 rgb(154, 146, 146), 
+  inset: 0 -15px 0 #9a9292, 
   0 45px 0 black;
+  overflow:auto
 }
 
 .cardedu::before{
