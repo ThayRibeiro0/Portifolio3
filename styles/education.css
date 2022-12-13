@@ -5,7 +5,7 @@ html {
 
 .card-object {
   display: grid;
-  flex-direction: column;
+  flex-direction:column;
   justify-content: center;
   margin-left: 280%;
   width: 100%;
@@ -17,6 +17,14 @@ html {
   font-size: 24px;
   line-height: 40px;
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.8));
+}
+
+@media (min-width: 320px)
+{
+  .card-object
+  {
+    display: content;
+  }
 }
 
 .card-object header {
@@ -140,8 +148,7 @@ body{
 {
   position: relative;
   width: 320px;
-  height: 600px;
-  margin: 30px;
+  height: 600px;;
   margin-top: 12%;
   background: #a22a3e;
   border-radius: 20px;
