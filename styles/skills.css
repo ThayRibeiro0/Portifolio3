@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #131416;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 0 10px;
+}
+
+::selection{
+    background-color: #000;
+    color: #129cff;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container6{
+    width: 500px;
+    height: 600px;
+    padding: 25px 30px;
+}
+
+.heading{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+
+.horizbar{
+    margin: 40px 0;
+}
+
+
+.horizbar .bar:first-child{
+    margin-top: 0;
+}
+
+.horizbar .bar:last-child{
+    margin-bottom: 0;
+}
+
+
+.horizbar .bar .info{
+    margin-bottom: 5px;
+}
+
+.horizbar .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
