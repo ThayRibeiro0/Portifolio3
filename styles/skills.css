@@ -63,3 +63,49 @@ section{
     opacity: 0;
 }
 
+.horizbar .bar .progrline{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    animation: animate 1s cubic-bezier(1,0,0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+.horizbar .bar .progrline span{
+    height: 100%;
+    background-color: #129cff;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.progrline .html samp{
+    width: 90%;
+}
+
+.progrline .css span{
+    width: 60%;
+}
+
+.progrline .jQuery span{
+    width: 85%;
+}
+
+.progrline .python span{
+    width: 50%;
+}
+
+.progrline .mysql span{
+    width: 75%;
+}
