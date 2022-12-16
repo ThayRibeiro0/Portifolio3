@@ -3,22 +3,24 @@ html {
   height: auto;
 }
 
-.card-object {
-  display: grid;
-  flex-direction:column;
-  justify-content: center;
-  margin-left: 280%;
+body{
   width: 100%;
+}
+
+.card-object {
+  display: flex;
+  position: relative;
+  text-align: center;
+  flex-direction:column;
   height: auto;
-  margin-top: -400px;
   grid-template: "header header"
     "aside  main"
     "foot  foot";
   font-size: 24px;
-  padding: 10px;
   line-height: 40px;
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.8));
 }
+
 
 .card-object header {
   grid-column: header;
@@ -26,7 +28,7 @@ html {
   background-image: url(https://image.ibb.co/b49eUb/dechirure.png);
   background-repeat: repeat;
 }
-
+ 
 .card-object aside {
   grid-area: aside;
   width: 40px;
@@ -38,7 +40,7 @@ html {
   grid-area: main;
   background-color: white;
 }
-
+ 
 .card-object main .message {
   background-image: url(https://image.ibb.co/iA4Dpb/line.png);
   background-repeat: repeat;
@@ -46,7 +48,7 @@ html {
   margin: 20px 20px 0 20px;
 }
 
-.card-object footer {
+/* .card-object footer {
   grid-column: foot;
   text-align: right;
   background-color: white;
@@ -110,7 +112,7 @@ html {
   100% {
     opacity: 0.6;
   }
-}
+} */ */ */ */
 
 *
 {
@@ -127,22 +129,32 @@ body{
   background: linear-gradient( #a22a3e, rgb(208, 200, 202));
 }
 
-.education
-{
+.cards{
+  margin-top: 2%;
+}
+
+
+@media (max-width: 930px){
+  .cardedu
+  {
+    margin-top: 10%;
+  }
+  }
+
+@media (min-width: 930px){
+.cards{
+
+  margin-top: 5%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 30px;
-  margin-right: 230px;
+}
 }
 
 .cardedu
 {
   position: relative;
-  width: 320px;
-  height: 600px;;
-  margin-top: 12%;
+  width: 360px;
+  height: 600px;
+  margin-right: 5%;
   background: #a22a3e;
   border-radius: 20px;
   border-bottom-left-radius: 160px;
